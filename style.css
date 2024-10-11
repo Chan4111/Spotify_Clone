@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+body{
+    background-color: antiquewhite;
+}
+*{
+    margin:0;
+    padding: 0;   
+}
+nav{
+    font-family: "Afacad Flux", sans-serif;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+    align-items: center;
+}
+nav ul li{
+    padding: 0 12px;
+}
+
+input[type="text"] {
+    padding: 5px; /* Input field ke liye padding */
+    margin-right: 5px; /* Button aur input field ke beech space */
+}
+
+button {
+    padding: 5px 10px; /* Button ki padding */
+    cursor: pointer; /* Pointer cursor dikhane ke liye */
+}
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight:bolder;
+    font-size: 1.3rem;
+}
+.container{
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round',sans-serif;
+    display: flex;
+    width: 70%;
+    border-radius: 12px;
+    margin: 23px auto;
+    padding: 32px;
+    background-image:url('chandan1.jpg') ;
+    background-size: cover;
+}
+
+.bottom{
+    position: sticky;
+    height: 135px;
+    background-color: rgb(4, 4, 4);
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.icons{
+    margin-top:24px;
+}
+.icons i{
+    cursor: pointer;
+}
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+.songItemContainer{
+    margin-top: 31px;
+}
+.songItem{
+  height: 50px;
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  margin: 12px 0;
+  border-radius:34px; ;
+}
+.songItem img{
+    width: 43px;
+    margin:0 23px;
+    border-radius:34px;
+}
+.timestamp{
+    margin:0 23px;
+}
+.timestamp i{
+    cursor: pointer;
+}
+.songInfo{
+    position:absolute;
+    left: 10vw;
+    font-family: 'Varela Round',sans-serif;
+}
+.songInfo img{
+    opacity: 0;
+    transition :opacity 0.4s ease-in;
+}
+
+@media screen and (max-width:850px) {
+    body {
+      background-color: rgb(81, 110, 110);
+    }
+    .songItem{
+        height: 50px;
+        display: flex;
+        background-color: white;
+        justify-content: space-between;
+        align-items: center;
+        color: black;
+        margin: 12px 0;
+        border-radius:34px; ;
+      }
+      p{
+        font-size: 24px;
+        margin-top: 5px;
+      }
+    }
