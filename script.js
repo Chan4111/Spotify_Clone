@@ -8,16 +8,16 @@ let gif = document.getElementById('gif');
 let masterSongName = document.getElementById('masterSongName');
 let songItems = Array.from(document.getElementsByClassName('songItem'));
 let songs = [
-    {songName:"Aaj_Ki_Raat___Stree_2__",filePath:"1.mp3",coverPath:"img1.png"},
-    {songName:"Aayi_Nai_-Stree_2",filePath:"2.mp3",coverPath:"img2.png"},
-    {songName:"Abhijeet_Sawant___Official_Video___Prem___Hardeep(256k)",filePath:"3.mp3",coverPath:"img3.png"},
-    {songName:"Choli_Ke_Peeche(0)",filePath:"4.mp3",coverPath:"img4.png"},
-    {songName:"Chunnari_Chunnari_Song__Lyrical_",filePath:"5.mp3",coverPath:"img5.png"},
-    {songName:"Dilbar(0)",filePath:"6.mp3",coverPath:"img6.png"},
-    {songName:"Ishare_Tere__From__Ishare_Tere__(0)",filePath:"7.mp3",coverPath:"img7.png"},
-    {songName:"Oh_Ho_Ho_Ho__Remix_(0)",filePath:"8.mp3",coverPath:"img8.png"},
-    {songName:"Paani_Paani(0)",filePath:"9.mp3",coverPath:"img9.png"},
-    {songName:"Tip_Tip(0)",filePath:"10.mp3",coverPath:"img10.png"}
+    {songName:"Aaj_Ki_Raat___Stree_2__",filePath:"songs/1.mp3",coverPath:"covers/img1.png"},
+    {songName:"Aayi_Nai_-Stree_2",filePath:"songs/2.mp3",coverPath:"covers/img2.png"},
+    {songName:"Abhijeet_Sawant___Official_Video___Prem___Hardeep(256k)",filePath:"songs/3.mp3",coverPath:"covers/img3.png"},
+    {songName:"Choli_Ke_Peeche(0)",filePath:"songs/4.mp3",coverPath:"covers/img4.png"},
+    {songName:"Chunnari_Chunnari_Song__Lyrical_",filePath:"songs/5.mp3",coverPath:"covers/img5.png"},
+    {songName:"Dilbar(0)",filePath:"songs/6.mp3",coverPath:"covers/img6.png"},
+    {songName:"Ishare_Tere__From__Ishare_Tere__(0)",filePath:"songs/7.mp3",coverPath:"covers/img7.png"},
+    {songName:"Oh_Ho_Ho_Ho__Remix_(0)",filePath:"songs/8.mp3",coverPath:"covers/img8.png"},
+    {songName:"Paani_Paani(0)",filePath:"songs/9.mp3",coverPath:"covers/img9.png"},
+    {songName:"Tip_Tip(0)",filePath:"songs/10.mp3",coverPath:"covers/img10.png"}
 ]
 songItems.forEach((element, i)=>{
  element.getElementsByTagName("img")[0].src = songs[i].coverPath;
